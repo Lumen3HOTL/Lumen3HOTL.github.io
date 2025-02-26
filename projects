@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PROJECTS | 3HOTL ONLINE</title>
+        <link rel="stylesheet" href="static/style/main.css">
+    </head>
+
+    <div class="container">
+        <h1>PROJECTS</h1>
+        <p>This page is focused on showcasing the various projects I have worked on, be that on my own
+            or with others. In other words, if it doesn't fit cleanly on another page and I want to show
+            it off, it goes here.
+        </p> 
+        <br><br>
+        <div class="button-container">
+            <a class="button" href="./index">HOME</a>
+            <a class="button" href="./art">ART</a>
+            <a class="button" href="./projects">PROJECTS</a>
+            <a class="button" href="./art">TEST</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Angels Have No Eyes</h1>
+        <p>A game jam project by me and Dan aka DanDotPng.
+        Dan was responsible for the programming, 3D modeling and environment
+        texture work, while I worked on art for UI elements and detail textures.
+        The game can be found on its 
+        <a href="https://itch.io">itch.io page</a>
+        , and a selection of my contributions
+        are included in this post!
+        </p>
+    </div>
+
+    <div class="container">
+        <h1>Gnar (de_gnar)</h1>
+        <div class="scroll-container">
+            <img src="static\img\projects\gnar\gnar11.jpg" loading="lazy">
+            <img src="static\img\projects\gnar\gnar12.jpg" loading="lazy">
+        </div>
+        <p>Gnar is a map for Counter Strike: Global Offensive (I am working on a CS:2/Source 2 port), created for the 2021 Mapcore
+            layout competition. It is a 5v5 competitive-focused defuse map set within an American skate park, heavily inspired by
+            movement tech of Counter Strike, my own hobby of skating, and an honorable mention to the Call of Duty: Black Ops 2 multiplayer
+            map Grind.
+        </p>
+        <p>The map can be found by its
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2726958620">Steam Workshop submission</a>
+        , and if I can track down any vods or the scoring sheet for the map in the competition, I'll list it below!
+        </p>
+    </div>
+
+    <div class="container">
+        <h1>Sakura (de_sakura)</h1>
+        <img src="static\img\projects\sakura\sakura1.jpg" loading="lazy">
+        <p>Sakura is a map for Counter Strike: Global Offensive (I am working on a CS:2/Source 2 port), created for the 2020 Mapcore
+            Wingman mapping competition. It is a 2v2 competitive-focused 'Wingman' defuse map set in a Japanese town caught in the transition
+            into the internet age. It was the first mapping project which I completed the full production process for, from planning and greyboxing
+            to creation of art assets and polishing for player experience. It performed well in the competition, placing in the upper half of all
+            100+ contestants, an accomplishment I am proud of for the stage in my learning map-making that I was at, and for having done it
+            entirely on my own.
+        </p>
+        <p>The map can be found by its
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2242739064">Steam Workshop submission</a>
+        , and if I can track down any vods or the scoring sheet for the map in the competition, I'll list it below!
+        </p>
+    </div>
+
+</html>

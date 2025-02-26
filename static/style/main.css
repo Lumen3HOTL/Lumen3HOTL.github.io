@@ -1,0 +1,142 @@
+/* fonts */
+
+.ubuntu-light {
+    font-family: "Ubuntu", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+/* fonts end here */  
+
+.container {
+    font-family: "Ubuntu", serif;
+    background-color: oklch(36.01% 0.0824 292.67);
+    border: 1px solid oklch(39.01% 0.0824 292.67);
+    border-radius: 10px;
+    box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
+    margin: 50px auto; /* centers the container horizontally */
+    max-width: 1000px; /* maximum width of the container */
+    padding: 24px; /* inner spacing */
+}
+
+img {
+    width: 75%;
+    height: 75%;
+}
+
+.image-container {
+    font-family: "Ubuntu", serif;
+    background-color: oklch(36.01% 0.0824 292.67);
+    border: 1px solid oklch(39% 0.01 75);
+    margin-top: 0px;
+    border-radius: 10px;
+    margin: 50px auto; /* centers the container horizontally */
+    max-width: 1000px; /* maximum width of the container */
+    padding: 24px; /* inner spacing */
+    height: 70%;
+    /* text-align: center; */
+    overflow: auto;
+}
+
+.image-container .text {
+    margin-right: 50px;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 8px;
+}
+
+body {
+    background-color: oklch(29.97% 0.028 309.75);
+    color: oklch(100.0% 0 0);
+}
+
+.button {
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: oklch(53.79% 0.1174 304.62);
+    box-shadow: 0 0 10px oklch(0% 0 0 / 20%);
+    border: 1px solid oklch(56.79% 0.1174 304.62);
+    border-radius: 5px;
+    color: oklch(100% 0 0);
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.button:hover {
+   background-color: oklch(50.79% 0.1174 304.62);
+}
+
+.center-on-screen {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    color: oklch(81.08% 0.0955 358.51);
+    text-decoration: none;
+}
+
+a:hover {
+    color: oklch(89.45% 0.0595 358.51);
+    text-decoration: none;
+}
+
+div.scroll-container {
+    background-color: oklch(81.08% 0.0955 358.51);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+  
+div.scroll-container img {
+    padding: 10px;
+}
