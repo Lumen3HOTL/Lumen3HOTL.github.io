@@ -1,2 +1,2 @@
 # lana-website
-the lzana website. like for lana
+the lana website. like for lana
