@@ -49,6 +49,10 @@
   }
 /* fonts end here */  
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
     font-family: "Ubuntu", serif;
     background-color: oklch(36.01% 0.0824 292.67);
@@ -58,6 +62,23 @@
     margin: 50px auto; /* centers the container horizontally */
     max-width: 1000px; /* maximum width of the container */
     padding: 24px; /* inner spacing */
+}
+
+.navcontainer {
+    position: fixed;
+    top:0;
+    right:1%;
+    
+
+    font-family: "Ubuntu", serif;
+    background-color: oklch(36.01% 0.0824 292.67);
+    border: 1px solid oklch(39.01% 0.0824 292.67);
+    border-radius: 10px;
+    box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
+    margin: 50px auto; /* centers the container horizontally */
+    max-width: 1000px; /* maximum width of the container */
+    padding: 12px; /* inner spacing */
+    text-align: left;
 }
 
 img {
@@ -139,4 +160,8 @@ div.scroll-container {
   
 div.scroll-container img {
     padding: 10px;
+}
+
+hr {
+  color: oklch(57.82% 0.0981 310.6);
 }
