@@ -1,52 +1,19 @@
 /* fonts */
 
-.ubuntu-light {
-    font-family: "Ubuntu", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .ubuntu-regular {
-    font-family: "Ubuntu", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .ubuntu-medium {
-    font-family: "Ubuntu", serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .ubuntu-bold {
-    font-family: "Ubuntu", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .ubuntu-light-italic {
-    font-family: "Ubuntu", serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .ubuntu-regular-italic {
-    font-family: "Ubuntu", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .ubuntu-medium-italic {
-    font-family: "Ubuntu", serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .ubuntu-bold-italic {
-    font-family: "Ubuntu", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
+@font-face {
+  font-family: "PPNeueMontrealMono-Medium", monospace;
+  src: ".\static\resources\PPNeueMontrealMono-Medium.otf";
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PPNeueMontrealMono-Bold", monospace;
+  src: ".\static\resources\PPNeueMontrealMono-Bold.otf";
+  font-weight: 800;
+  font-style: normal;
+}
+
 /* fonts end here */  
 
 html {
@@ -54,7 +21,7 @@ html {
 }
 
 .container {
-    font-family: "Ubuntu", serif;
+    font-family: "PPNeueMontrealMono-Medium", monospace;
     background-color: oklch(36.01% 0.0824 292.67);
     border: 1px solid oklch(39.01% 0.0824 292.67);
     border-radius: 10px;
@@ -70,7 +37,7 @@ html {
     right:1%;
     
 
-    font-family: "Ubuntu", serif;
+    font-family: "PPNeueMontrealMono-Medium", monospace;
     background-color: oklch(36.01% 0.0824 292.67);
     border: 1px solid oklch(39.01% 0.0824 292.67);
     border-radius: 10px;
@@ -87,7 +54,7 @@ img {
 }
 
 .image-container {
-    font-family: "Ubuntu", serif;
+    font-family: "PPNeueMontrealMono-Medium", monospace;
     background-color: oklch(36.01% 0.0824 292.67);
     border: 1px solid oklch(39% 0.01 75);
     margin-top: 0px;
@@ -116,7 +83,7 @@ body {
 }
 
 .button {
-    font-family: "Ubuntu", serif;
+    font-family: "PPNeueMontrealMono-Bold", monospace;
     font-weight: 700;
     font-style: normal;
     background-color: oklch(53.79% 0.1174 304.62);
@@ -164,4 +131,8 @@ div.scroll-container img {
 
 hr {
   color: oklch(57.82% 0.0981 310.6);
+}
+
+h1 {
+  font-family: "PPNeueMontrealMono-Bold", monospace;
 }
