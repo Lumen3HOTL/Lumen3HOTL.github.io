@@ -17,13 +17,18 @@
 /* fonts end here */  
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    background-color: oklch(27.3% 0.0182 80.72);
+}
+body {
+    background-color: oklch(27.3% 0.0182 80.72);
+    color: oklch(100.0% 0 0);
 }
 
 .container {
     font-family: "PPNeueMontrealMono-Medium", monospace;
-    background-color: oklch(36.01% 0.0824 292.67);
-    border: 1px solid oklch(39.01% 0.0824 292.67);
+    background-color: oklch(45.23% 0.0439 93.69);
+    border: 1px solid oklch(48.23% 0.0439 93.69);
     border-radius: 10px;
     box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
     margin: 50px auto; /* centers the container horizontally */
@@ -77,18 +82,14 @@ img {
     padding: 8px;
 }
 
-body {
-    background-color: oklch(29.97% 0.028 309.75);
-    color: oklch(100.0% 0 0);
-}
 
 .button {
     font-family: "PPNeueMontrealMono-Bold", monospace;
     font-weight: 700;
     font-style: normal;
-    background-color: oklch(53.79% 0.1174 304.62);
+    background-color: oklch(70.45% 0.1236 93.69);
     box-shadow: 0 0 10px oklch(0% 0 0 / 20%);
-    border: 1px solid oklch(56.79% 0.1174 304.62);
+    border: 1px solid oklch(81.45% 0.1236 93.69);
     border-radius: 5px;
     color: oklch(100% 0 0);
     cursor: pointer;
@@ -98,7 +99,7 @@ body {
 }
 
 .button:hover {
-   background-color: oklch(50.79% 0.1174 304.62);
+   background-color: oklch(65.45% 0.1236 93.69)
 }
 
 .center-on-screen {
@@ -106,6 +107,10 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+p {
+    color: oklch(94.3% 0.0476 86.96)
 }
 
 a {
@@ -135,4 +140,5 @@ hr {
 
 h1 {
   font-family: "PPNeueMontrealMono-Bold", monospace;
+  color: oklch(90.3% 0.0576 86.96)
 }
