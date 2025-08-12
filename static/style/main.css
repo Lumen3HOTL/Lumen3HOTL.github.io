@@ -31,16 +31,23 @@ body {
     border: 1px solid oklch(48.23% 0.0439 93.69);
     border-radius: 10px;
     box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
+    
     margin: 50px auto; /* centers the container horizontally */
     max-width: 1000px; /* maximum width of the container */
     padding: 24px; /* inner spacing */
+    max-height: fit-content;
+    
+    display:flex;
+    flex-flow:column;
 }
 
-.navcontainer {
+@media screen and (min-width: 1024px) {
+    .navcontainer {
+    display:flex;
+    flex-direction: column;
     position: fixed;
     top:0;
     right:1%;
-    
 
     font-family: "PPNeueMontrealMono-Medium", monospace;
     background-color: oklch(45.23% 0.0439 93.69);
@@ -48,14 +55,22 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
     margin: 50px auto; /* centers the container horizontally */
-    max-width: 1000px; /* maximum width of the container */
+    max-width: 175px; /* maximum width of the container */
+    width: 30%; /* base width of the container */
     padding: 12px; /* inner spacing */
     text-align: left;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navcontainer {
+        display: none !important;
+    }
 }
 
 img {
-    width: 75%;
-    height: 75%;
+    width: 80%;
+    height: 80%;
 }
 
 .image-container {
@@ -67,9 +82,12 @@ img {
     margin: 50px auto; /* centers the container horizontally */
     max-width: 1000px; /* maximum width of the container */
     padding: 24px; /* inner spacing */
-    height: 70%;
+    height: fit-content;
     /* text-align: center; */
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .image-container .text {
@@ -80,6 +98,7 @@ img {
     max-width: 100%;
     max-height: 100%;
     padding: 8px;
+    display: flex;
 }
 
 
@@ -93,9 +112,18 @@ img {
     border-radius: 5px;
     color: oklch(100% 0 0);
     cursor: pointer;
-    margin: 0 10px;
     padding: 10px 20px;
     text-decoration: none;
+    display: flex;
+    max-width: fit-content;
+    margin: 5px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: fit-content;
 }
 
 .button:hover {
@@ -110,12 +138,16 @@ img {
 }
 
 p {
-    color: oklch(94.3% 0.0476 86.96)
+    color: oklch(94.3% 0.0476 86.96);
+    margin-top:1%;
+    margin-bottom:1%;
 }
 
 a {
     color: oklch(71.486% 0.1258 84.937);
     text-decoration: none;
+    margin-left:0;
+    margin-right:0;
 }
 
 a:hover {
@@ -140,5 +172,13 @@ hr {
 
 h1 {
   font-family: "PPNeueMontrealMono-Bold", monospace;
-  color: oklch(90.3% 0.0576 86.96)
+  color: oklch(90.3% 0.0576 86.96);
+  margin-bottom: 1%;
+}
+
+h2 {
+    font-family: "PPNeueMontrealMono-Bold", monospace;
+    color: oklch(90.824% 0.02956 87.544);
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
