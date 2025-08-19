@@ -32,16 +32,17 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
     
-    margin: 50px auto; /* centers the container horizontally */
+    margin: 25px auto; /* centers the container horizontally */
     max-width: 1000px; /* maximum width of the container */
     padding: 24px; /* inner spacing */
     max-height: fit-content;
-    
+    float:left; /* make it go left */
+    margin-left: 9%;
     display:flex;
     flex-flow:column;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1400px) {
     .navcontainer {
     display:flex;
     flex-direction: column;
@@ -62,7 +63,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
     .navcontainer {
         display: none !important;
     }
@@ -114,6 +115,7 @@ img {
     cursor: pointer;
     padding: 10px 20px;
     text-decoration: none;
+    
     display: flex;
     max-width: fit-content;
     margin: 5px;
