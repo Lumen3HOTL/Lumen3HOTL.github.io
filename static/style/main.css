@@ -36,8 +36,8 @@ body {
     max-width: 1000px; /* maximum width of the container */
     padding: 24px; /* inner spacing */
     max-height: fit-content;
-    float:left; /* make it go left */
-    margin-left: 9%;
+    /* float:left; make it go left */
+    /* margin-left: 9%; */
     display:flex;
     flex-flow:column;
 }
