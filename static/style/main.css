@@ -18,22 +18,40 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: oklch(27.3% 0.0182 80.72);
+    background-color: oklch(15.704% 0.021 308.539);
 }
 body {
-    background-color: oklch(27.3% 0.0182 80.72);
+    background-color: oklch(15.704% 0.021 308.539);
     color: oklch(100.0% 0 0);
 }
 
 .container {
     font-family: "PPNeueMontrealMono-Medium", monospace;
-    background-color: oklch(45.23% 0.0439 93.69);
-    border: 1px solid oklch(48.23% 0.0439 93.69);
+    background-color: oklch(42.345% 0.09476 308.845);
+    border: 1px solid oklch(0.5119 0.1131 308.539);
     border-radius: 10px;
     box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
     
     margin: 25px auto; /* centers the container horizontally */
-    max-width: 1000px; /* maximum width of the container */
+    margin-bottom: 35px; 
+    max-width: 1200px; /* maximum width of the container */
+    padding: 24px; /* inner spacing */
+    max-height: fit-content;
+    /* float:left; make it go left */
+    /* margin-left: 9%; */
+    display:flex;
+    flex-flow:column;
+}
+
+.container-invis {
+    font-family: "PPNeueMontrealMono-Medium", monospace;
+    background-color: oklch(100% 0.00011 271.152 / 0);
+    border: 1px solid oklch(0.5119 0.1131 308.539);
+    border-radius: 10px;
+    box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
+    
+    margin: 25px auto; /* centers the container horizontally */
+    max-width: 1200px; /* maximum width of the container */
     padding: 24px; /* inner spacing */
     max-height: fit-content;
     /* float:left; make it go left */
@@ -51,8 +69,8 @@ body {
     right:1%;
 
     font-family: "PPNeueMontrealMono-Medium", monospace;
-    background-color: oklch(45.23% 0.0439 93.69);
-    border: 1px solid oklch(48.23% 0.0439 93.69);
+    background-color: oklch(42.345% 0.09476 308.845);
+    border: 1px solid oklch(0.5119 0.1131 308.539);
     border-radius: 10px;
     box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
     margin: 50px auto; /* centers the container horizontally */
@@ -76,12 +94,12 @@ img {
 
 .image-container {
     font-family: "PPNeueMontrealMono-Medium", monospace;
-    background-color: oklch(45.23% 0.0439 93.69);
-    border: 1px solid oklch(48.23% 0.0439 93.69);
+    background-color: oklch(42.345% 0.09476 308.845 / 0);
+    border: 1px solid oklch(0.5119 0.1131 308.539);
     margin-top: 0px;
     border-radius: 10px;
     margin: 50px auto; /* centers the container horizontally */
-    max-width: 1000px; /* maximum width of the container */
+    max-width: 1200px; /* maximum width of the container */
     padding: 24px; /* inner spacing */
     height: fit-content;
     /* text-align: center; */
@@ -107,9 +125,9 @@ img {
     font-family: "PPNeueMontrealMono-Bold", monospace;
     font-weight: 700;
     font-style: normal;
-    background-color: oklch(70.45% 0.1236 93.69);
+    background-color: oklch(49.703% 0.15714 4.563);
     box-shadow: 0 0 10px oklch(0% 0 0 / 20%);
-    border: 1px solid oklch(81.45% 0.1236 93.69);
+    border: 1px solid oklch(49.703% 0.15714 4.563);
     border-radius: 5px;
     color: oklch(100% 0 0);
     cursor: pointer;
@@ -118,7 +136,18 @@ img {
     
     display: flex;
     max-width: fit-content;
-    margin: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button:hover {
+   background-color: oklch(57.697% 0.14598 1.731);
+}
+
+.button:active {
+    background-color: oklch(34.758% 0.09006 2.158);
 }
 
 .button-container {
@@ -126,10 +155,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     max-height: fit-content;
-}
-
-.button:hover {
-   background-color: oklch(65.45% 0.1236 93.69)
+    justify-content: center;
 }
 
 .center-on-screen {
@@ -145,20 +171,29 @@ p {
     margin-bottom:1%;
 }
 
+.container-invis p {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+p + p {
+    margin-top: 1em;
+}
+
 a {
-    color: oklch(71.486% 0.1258 84.937);
+    color: oklch(64.312% 0.20198 4.776);
     text-decoration: none;
     margin-left:0;
     margin-right:0;
 }
 
 a:hover {
-    color: oklch(94.3% 0.0476 86.96);
+    color: oklch(73.75% 0.12233 359.107);
     text-decoration: none;
 }
 
 div.scroll-container {
-    background-color: oklch(45.23% 0.0439 93.69);
+    background-color: oklch(45.303% 0.04487 94.54 / 0);
     overflow: auto;
     white-space: nowrap;
     padding: 10px;
@@ -176,6 +211,7 @@ h1 {
   font-family: "PPNeueMontrealMono-Bold", monospace;
   color: oklch(90.3% 0.0576 86.96);
   margin-bottom: 1%;
+  margin-left: 2%;
 }
 
 h2 {
@@ -183,4 +219,8 @@ h2 {
     color: oklch(90.824% 0.02956 87.544);
     margin-bottom: 5px;
     margin-top: 5px;
+}
+
+.title {
+    font-size: 4em;
 }
