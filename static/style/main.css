@@ -159,7 +159,6 @@ img {
     background-color: oklch(49.703% 0.15714 4.563);
     box-shadow: 0 0 10px oklch(0% 0 0 / 20%);
     border: 1px solid oklch(49.703% 0.15714 4.563);
-    border-radius: 5px;
     color: oklch(100% 0 0);
     cursor: pointer;
     padding: 10px 20px;
@@ -174,11 +173,15 @@ img {
 }
 
 .button:hover {
-   background-color: oklch(57.697% 0.14598 1.731);
+    /* background-color: oklch(57.697% 0.14598 1.731); */
+    background-color: oklch(34.758% 0.09006 2.158);
+    box-shadow: 0 0 10px oklch(0% 0 0 / 20%);
+    border-image: linear-gradient(to top right, oklch(49.703% 0.15714 4.563), oklch(0.6612 0.1613 39.13)) 1;
+    border-width: 1px;
 }
 
 .button:active {
-    background-color: oklch(34.758% 0.09006 2.158);
+    background-color: oklch(27.758% 0.09006 2.158);
 }
 
 .button-container {
@@ -209,6 +212,11 @@ p {
 }
 
 .container p {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.image-container p {
     margin-left: 2%;
     margin-right: 2%;
 }
