@@ -26,14 +26,14 @@ body {
 }
 
 .container {
-    font-family: "PPNeueMontrealMono-Medium", monospace;
-    background-color: oklch(42.345% 0.09476 308.845);
-    border: 1px solid oklch(0.5119 0.1131 308.539);
+    background-color: oklch(0.1965 0.0613 308.845);
+    border-image: linear-gradient(to bottom right, oklch(0.5119 0.1806 308.539), oklch(0.5119 0.1806 334.5)) 1;
+    border-width: 1px;
     border-radius: 10px;
+    border-style: solid;
     box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
     
     margin: 25px auto; /* centers the container horizontally */
-    margin-bottom: 35px; 
     max-width: 1200px; /* maximum width of the container */
     padding: 24px; /* inner spacing */
     max-height: fit-content;
@@ -44,9 +44,27 @@ body {
 }
 
 .container-invis {
-    font-family: "PPNeueMontrealMono-Medium", monospace;
+    border-image: linear-gradient(to bottom right, oklch(0.5119 0.1806 308.539), oklch(0.5119 0.1806 334.5)) 1;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
     background-color: oklch(100% 0.00011 271.152 / 0);
-    border: 1px solid oklch(0.5119 0.1131 308.539);
+    /* border: 1px solid oklch(0.5119 0.1806 308.539); */
+    box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
+    
+    margin: 25px auto; /* centers the container horizontally */
+    max-width: 1200px; /* maximum width of the container */
+    padding: 24px; /* inner spacing */
+    max-height: fit-content;
+    /* float:left; make it go left */
+    /* margin-left: 9%; */
+    display:flex;
+    flex-flow:column;
+}
+
+.non-container-content {
+    background-color: oklch(100% 0.00011 271.152 / 0);
+    border: 1px solid oklch(51.232% 0.11309 308.267 / 0);
     border-radius: 10px;
     box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
     
@@ -62,22 +80,34 @@ body {
 
 @media screen and (min-width: 1400px) {
     .navcontainer {
-    display:flex;
-    flex-direction: column;
-    position: fixed;
-    top:0;
-    right:1%;
+        display:flex;
+        flex-direction: column;
+        position: fixed;
+        top:0;
+        right:1%;
 
-    font-family: "PPNeueMontrealMono-Medium", monospace;
-    background-color: oklch(42.345% 0.09476 308.845);
-    border: 1px solid oklch(0.5119 0.1131 308.539);
-    border-radius: 10px;
-    box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
-    margin: 50px auto; /* centers the container horizontally */
-    max-width: 175px; /* maximum width of the container */
-    width: 30%; /* base width of the container */
-    padding: 12px; /* inner spacing */
-    text-align: left;
+        font-family: "PPNeueMontrealMono-Medium", monospace;
+        background-color: oklch(0.1965 0.0613 308.845);
+        border-image: linear-gradient(to bottom right, oklch(0.5119 0.1806 308.539), oklch(0.5119 0.1806 334.5)) 1;
+        border-width: 1px;
+        border-style: solid;
+        box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
+        margin: 50px auto; /* centers the container horizontally */
+        max-width: 175px; /* maximum width of the container */
+        padding: 10px; /* inner spacing */
+        text-align: left;
+    }
+}
+
+details {
+    color: oklch(90.3% 0.0576 86.96);
+    
+    summary::marker {
+        content: "<<<";
+    }
+
+    &[open] summary::marker {
+        content: ">>>";
     }
 }
 
@@ -88,16 +118,17 @@ body {
 }
 
 img {
-    width: 80%;
-    height: 80%;
+    height: 95vh;
+    width: auto;
 }
 
 .image-container {
-    font-family: "PPNeueMontrealMono-Medium", monospace;
-    background-color: oklch(42.345% 0.09476 308.845 / 0);
-    border: 1px solid oklch(0.5119 0.1131 308.539);
-    margin-top: 0px;
+    border-image: linear-gradient(to bottom right, oklch(0.5119 0.1806 308.539), oklch(0.5119 0.1806 334.5)) 1;
     border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: oklch(100% 0.00011 271.152 / 0);
+    margin-top: 0px;
     margin: 50px auto; /* centers the container horizontally */
     max-width: 1200px; /* maximum width of the container */
     padding: 24px; /* inner spacing */
@@ -166,6 +197,7 @@ img {
 }
 
 p {
+    font-family: "PPNeueMontrealMono-Bold", monospace;
     color: oklch(94.3% 0.0476 86.96);
     margin-top:1%;
     margin-bottom:1%;
@@ -176,11 +208,17 @@ p {
     margin-right: 2%;
 }
 
+.container p {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
 p + p {
     margin-top: 1em;
 }
 
 a {
+    font-family: "PPNeueMontrealMono-Medium", monospace;
     color: oklch(64.312% 0.20198 4.776);
     text-decoration: none;
     margin-left:0;
@@ -219,6 +257,8 @@ h2 {
     color: oklch(90.824% 0.02956 87.544);
     margin-bottom: 5px;
     margin-top: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .title {
