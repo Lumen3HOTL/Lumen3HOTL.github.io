@@ -37,8 +37,22 @@ body {
     max-width: 1200px; /* maximum width of the container */
     padding: 24px; /* inner spacing */
     max-height: fit-content;
-    /* float:left; make it go left */
-    /* margin-left: 9%; */
+    display:flex;
+    flex-flow:column;
+}
+
+.container-notice {
+    background-color: oklch(0.1587 0.0402 88.67);
+    border-image: linear-gradient(to bottom right, oklch(0.8059 0.1652 94.64), oklch(0.8059 0.1652 72.98)) 1;
+    border-width: 1px;
+    border-radius: 10px;
+    border-style: solid;
+    box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
+    
+    margin: 25px auto; /* centers the container horizontally */
+    max-width: 1200px; /* maximum width of the container */
+    padding: 24px; /* inner spacing */
+    max-height: fit-content;
     display:flex;
     flex-flow:column;
 }
@@ -49,15 +63,12 @@ body {
     border-width: 1px;
     border-style: solid;
     background-color: oklch(100% 0.00011 271.152 / 0);
-    /* border: 1px solid oklch(0.5119 0.1806 308.539); */
     box-shadow: 0 0 10px oklch(0% 0 0 / 20%); /* subtle shadow */
     
     margin: 25px auto; /* centers the container horizontally */
     max-width: 1200px; /* maximum width of the container */
     padding: 24px; /* inner spacing */
     max-height: fit-content;
-    /* float:left; make it go left */
-    /* margin-left: 9%; */
     display:flex;
     flex-flow:column;
 }
@@ -72,8 +83,6 @@ body {
     max-width: 1200px; /* maximum width of the container */
     padding: 24px; /* inner spacing */
     max-height: fit-content;
-    /* float:left; make it go left */
-    /* margin-left: 9%; */
     display:flex;
     flex-flow:column;
 }
@@ -133,7 +142,6 @@ img {
     max-width: 1200px; /* maximum width of the container */
     padding: 24px; /* inner spacing */
     height: fit-content;
-    /* text-align: center; */
     overflow: auto;
     display: flex;
     flex-direction: column;
@@ -158,7 +166,7 @@ img {
     font-style: normal;
     background-color: oklch(49.703% 0.15714 4.563);
     box-shadow: 0 0 10px oklch(0% 0 0 / 20%);
-    border: 1px solid oklch(49.703% 0.15714 4.563);
+    border: 2px solid oklch(49.703% 0.15714 4.563);
     color: oklch(100% 0 0);
     cursor: pointer;
     padding: 10px 20px;
@@ -173,15 +181,40 @@ img {
 }
 
 .button:hover {
-    /* background-color: oklch(57.697% 0.14598 1.731); */
     background-color: oklch(34.758% 0.09006 2.158);
-    box-shadow: 0 0 10px oklch(0% 0 0 / 20%);
+    color: oklch(100% 0 0);
     border-image: linear-gradient(to top right, oklch(49.703% 0.15714 4.563), oklch(0.6612 0.1613 39.13)) 1;
-    border-width: 1px;
+    border-width: 2px;
 }
 
 .button:active {
     background-color: oklch(27.758% 0.09006 2.158);
+}
+
+.button-curpage {
+    font-family: "PPNeueMontrealMono-Bold", monospace;
+    font-weight: 700;
+    font-style: normal;
+    background-color: oklch(34.758% 0.09006 2.158 / 0);
+    box-shadow: 0 0 10px oklch(0% 0 0 / 20%);
+    border-image: linear-gradient(to top right, oklch(49.703% 0.15714 4.563), oklch(0.6612 0.1613 39.13)) 1;
+    border-width: 2px;
+    border-style: solid;
+    color: oklch(100% 0 0);
+    cursor: default;
+    padding: 10px 20px;
+    text-decoration: none;
+    
+    display: flex;
+    max-width: fit-content;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button-curpage:hover {
+    color: oklch(100% 0 0);
 }
 
 .button-container {
@@ -204,6 +237,8 @@ p {
     color: oklch(94.3% 0.0476 86.96);
     margin-top:1%;
     margin-bottom:1%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .container-invis p {
