@@ -69,6 +69,7 @@ body {
     max-width: 1200px; /* maximum width of the container */
     padding: 24px; /* inner spacing */
     max-height: fit-content;
+
     display:flex;
     flex-flow:column;
 }
@@ -126,9 +127,25 @@ details {
     }
 }
 
+.footer {
+    text-align: center;
+}
+
 img {
     height: 95vh;
     width: auto;
+}
+
+.footer img {
+  display: inline;
+  border-radius: 0;
+  width: 88px;
+  height: 31px;
+  margin: 0;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .image-container {
@@ -142,14 +159,14 @@ img {
     max-width: 1200px; /* maximum width of the container */
     padding: 24px; /* inner spacing */
     height: fit-content;
+
     overflow: auto;
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
 }
 
 .image-container .text {
-    margin-right: 50px;
+    margin-right: 0;
 }
 
 .image-container img {
@@ -159,6 +176,67 @@ img {
     display: flex;
 }
 
+.image-container-vertical {
+    border-image: linear-gradient(to bottom right, oklch(0.5119 0.1806 308.539), oklch(0.5119 0.1806 334.5)) 1;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: oklch(100% 0.00011 271.152 / 0);
+    margin: 0px;
+    max-width: 1200px; /* maximum width of the container */
+    padding: 24px; /* inner spacing */
+    text-wrap-mode: nowrap;
+    width:max-content;
+
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.image-container-vertical h1 {
+    width: max-content;
+}
+
+.image-container-vertical img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 8px;
+    display: flex;
+}
+
+.multi-container {
+    display: flex;
+    flex-flow:wrap row;
+    align-items: start;
+    justify-content: left;
+    gap: 7vw;
+
+    max-width: 1200px;
+    height: fit-content;
+    padding: 0px;
+    margin: 25px auto;
+}
+
+.multi-container .container-invis {
+    display: flex;
+    flex-flow: column;
+    margin-left: 0px; 
+    margin-right: 0px;
+    width: 100%;
+}
+
+.width-15p {
+    width: 14%;
+}
+
+.width-85p {
+    width: 74%;
+}
+
+.width-50p {
+    max-width: 40%;
+}
 
 .button {
     font-family: "PPNeueMontrealMono-Bold", monospace;
@@ -171,6 +249,7 @@ img {
     cursor: pointer;
     padding: 10px 20px;
     text-decoration: none;
+    justify-content: center;
     
     display: flex;
     max-width: fit-content;
@@ -189,6 +268,25 @@ img {
 
 .button:active {
     background-color: oklch(27.758% 0.09006 2.158);
+}
+
+.socials {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.socials .button {
+    max-width: 50%;
+    width: 50%;
+    justify-content: center;
+    align-self: center;
+}
+
+.socials h1 {
+    align-self: center;
+    margin: 0px;
 }
 
 .button-curpage {
@@ -293,6 +391,8 @@ h1 {
   color: oklch(90.3% 0.0576 86.96);
   margin-bottom: 1%;
   margin-left: 2%;
+  margin-right: 0%;
+  width:fit-content;
 }
 
 h2 {
@@ -301,7 +401,7 @@ h2 {
     margin-bottom: 5px;
     margin-top: 5px;
     margin-left: 2%;
-    margin-right: 2%;
+    margin-right: 0%;
 }
 
 .title {
