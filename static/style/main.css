@@ -109,12 +109,6 @@ body {
     }
 }
 
-@media screen and (max-width: 1400px) {
-    .navcontainer {
-        display: none !important;
-    }
-}
-
 details {
     color: oklch(90.3% 0.0576 86.96);
     
@@ -124,6 +118,12 @@ details {
 
     &[open] summary::marker {
         content: ">>>";
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .navcontainer {
+        display: none !important;
     }
 }
 
@@ -148,157 +148,74 @@ img {
   image-rendering: -webkit-optimize-contrast;
 }
 
-/* IF BIG */
-@media screen and (orientation: landscape) {
-    .image-container {
-        border-image: linear-gradient(to bottom right, oklch(0.5119 0.1806 308.539), oklch(0.5119 0.1806 334.5)) 1;
-        border-radius: 10px;
-        border-width: 1px;
-        border-style: solid;
-        background-color: oklch(100% 0.00011 271.152 / 0);
-        margin-top: 0px;
-        margin: 50px auto; /* centers the container horizontally */
-        max-width: 1200px; /* maximum width of the container */
-        padding: 24px; /* inner spacing */
-        height: fit-content;
+.image-container {
+    border-image: linear-gradient(to bottom right, oklch(0.5119 0.1806 308.539), oklch(0.5119 0.1806 334.5)) 1;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: oklch(100% 0.00011 271.152 / 0);
+    margin-top: 0px;
+    margin: 50px auto; /* centers the container horizontally */
+    max-width: 1200px; /* maximum width of the container */
+    padding: 24px; /* inner spacing */
+    height: fit-content;
 
-        overflow: auto;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .image-container .text {
-        margin-right: 0;
-    }
-
-    .image-container img {
-        max-width: 100%;
-        max-height: 100%;
-        padding: 8px;
-        display: flex;
-    }
-
-    .image-container-vertical {
-        border-image: linear-gradient(to bottom right, oklch(0.5119 0.1806 308.539), oklch(0.5119 0.1806 334.5)) 1;
-        border-radius: 10px;
-        border-width: 1px;
-        border-style: solid;
-        background-color: oklch(100% 0.00011 271.152 / 0);
-        margin: 0px;
-        max-width: 1200px; /* maximum width of the container */
-        padding: 24px; /* inner spacing */
-        text-wrap-mode: nowrap;
-        width: 50vw;
-
-        overflow: auto;
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-    }
-
-    .image-container-vertical h1 {
-        width: max-content;
-    }
-
-    .image-container-vertical img {
-        max-width: 100%;
-        max-height: 100%;
-        padding: 8px;
-        display: flex;
-    }
-
-    .multi-container {
-        display: flex;
-        flex-flow:wrap row;
-        align-items: stretch;
-        justify-content: center;
-        gap: 3vw;
-
-        max-width: 100vw;
-        height: fit-content;
-        padding: 0px;
-        margin: 25px auto;
-        margin-left:0px;
-    }
-
-    .multi-container .image-container-vertical {
-        width: 36vw
-    }
-
-    .width-15p {
-        width: 14%;
-    }
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
 }
-/*          */
-/* IF SMALL */
-@media screen and (orientation: portrait) {
-    .image-container {
-        border-image: linear-gradient(to bottom right, oklch(0.5119 0.1806 308.539), oklch(0.5119 0.1806 334.5)) 1;
-        border-radius: 10px;
-        border-width: 1px;
-        border-style: solid;
-        background-color: oklch(100% 0.00011 271.152 / 0);
-        margin-top: 0px;
-        margin: 50px auto; /* centers the container horizontally */
-        max-width: 1200px; /* maximum width of the container */
-        padding: 24px; /* inner spacing */
-        height: fit-content;
 
-        overflow: auto;
-        display: flex;
-        flex-direction: column;
-    }
+.image-container .text {
+    margin-right: 0;
+}
 
-    .image-container img {
-        max-width: 100%;
-        max-height: 100%;
-        padding: 8px;
-        display: flex;
-    }
-    
-    .image-container-vertical {
-        border-image: linear-gradient(to bottom right, oklch(0.5119 0.1806 308.539), oklch(0.5119 0.1806 334.5)) 1;
-        border-radius: 10px;
-        border-width: 1px;
-        border-style: solid;
-        background-color: oklch(100% 0.00011 271.152 / 0);
-        margin: 0px;
-        max-width: 90vw; /* maximum width of the container */
-        padding: 24px; /* inner spacing */
-        text-wrap-mode: nowrap;
-        height:max-content;
-        width: 85vw;
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 8px;
+    display: flex;
+}
 
-        overflow: auto;
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-    }
+.image-container-vertical {
+    border-image: linear-gradient(to bottom right, oklch(0.5119 0.1806 308.539), oklch(0.5119 0.1806 334.5)) 1;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: oklch(100% 0.00011 271.152 / 0);
+    margin: 0px;
+    max-width: 1200px; /* maximum width of the container */
+    padding: 24px; /* inner spacing */
+    text-wrap-mode: nowrap;
+    width:max-content;
 
-    .image-container-vertical h1 {
-        width: max-content;
-    }
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
 
-    .image-container-vertical img {
-        max-width: 100%;
-        max-height: 100%;
-        padding: 8px;
-        display: flex;
-    }
+.image-container-vertical h1 {
+    width: max-content;
+}
 
-    .multi-container {
-        display: flex;
-        flex-flow:column;
-        align-items:start;
-        justify-content: center;
-        gap: 3vw;
+.image-container-vertical img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 8px;
+    display: flex;
+}
 
-        max-width: 100vw;
-        height: fit-content;
-        padding: 5px;
-        margin: 25px auto;
-        margin-left:0px;
-    }
+.multi-container {
+    display: flex;
+    flex-flow:wrap row;
+    align-items: start;
+    justify-content: left;
+    gap: 7vw;
+
+    max-width: 1200px;
+    height: fit-content;
+    padding: 0px;
+    margin: 25px auto;
 }
 
 .multi-container .container-invis {
@@ -307,6 +224,10 @@ img {
     margin-left: 0px; 
     margin-right: 0px;
     width: 100%;
+}
+
+.width-15p {
+    width: 14%;
 }
 
 .width-85p {
