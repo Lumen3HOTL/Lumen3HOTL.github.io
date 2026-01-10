@@ -509,14 +509,20 @@ a:hover {
 
 div.scroll-container {
     background-color: oklch(45.303% 0.04487 94.54 / 0);
-    overflow: hidden;
+    overflow: auto;
     white-space: nowrap;
     padding: 10px;
+    width: 100%;
 }
   
 div.scroll-container img {
     padding: 10px;
     width: 60vw;
+    height: auto;
+}
+
+.scroll-container-bounds {
+    overflow: hidden;
 }
 
 hr {
