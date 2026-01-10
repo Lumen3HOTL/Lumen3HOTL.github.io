@@ -53,6 +53,7 @@ body {
     
     margin: 25px auto; /* centers the container horizontally */
     max-width: 75vw; /* maximum width of the container */
+    width: 100%;
     padding: 24px; /* inner spacing */
     max-height: fit-content;
     display:flex;
