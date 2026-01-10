@@ -25,6 +25,24 @@ body {
     color: oklch(100.0% 0 0);
 }
 
+.hotl-header {
+    font-size: 1.5vw;
+    background-image: linear-gradient(to top left, oklch(49.703% 0.15714 4.563), oklch(0.6612 0.1613 39.13));
+    color: transparent;
+    background-clip: text;
+    align-self: center;
+    justify-self: center;
+}
+
+.lana-header {
+    font-size: 3vw;
+    background-image: linear-gradient(to top left, oklch(49.703% 0.15714 4.563), oklch(0.6612 0.1613 39.13));
+    color: transparent;
+    background-clip: text;
+    align-self: center;
+    justify-self: center;
+}
+
 .container {
     background-color: oklch(0.1965 0.0613 308.845);
     border-image: linear-gradient(to bottom right, oklch(0.5119 0.1806 308.539), oklch(0.5119 0.1806 334.5)) 1;
@@ -134,6 +152,13 @@ details {
 img {
     height: auto;
     width: auto;
+}
+
+.lth-image {
+    height: 30vw;
+    width: fit-content;
+    justify-self: center;
+    align-self: center;
 }
 
 /* 88x31 Rules */
@@ -494,16 +519,20 @@ div.scroll-container img {
 }
 
 hr {
-  color: oklch(71.486% 0.1258 84.937);
+    background: linear-gradient(to bottom right, oklch(0.5119 0.1806 308.539), oklch(0.5119 0.1806 334.5));
+    height:1px;
+    border-radius: 2px;
+    border:0px;
+    width: 90%;
 }
 
 h1 {
-  font-family: "PPNeueMontrealMono-Bold", monospace;
-  color: oklch(90.3% 0.0576 86.96);
-  margin-bottom: 1%;
-  margin-left: 2%;
-  margin-right: 0%;
-  width:fit-content;
+    font-family: "PPNeueMontrealMono-Bold", monospace;
+    color: oklch(90.3% 0.0576 86.96);
+    margin-bottom: 1%;
+    margin-left: 2%;
+    margin-right: 0%;
+    width:fit-content;
 }
 
 h2 {
