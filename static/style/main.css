@@ -156,8 +156,8 @@ img {
 }
 
 .lth-image {
-    height: 30vw;
-    width: fit-content;
+    height: auto;
+    width: 30vw;
     justify-self: center;
     align-self: center;
 }
