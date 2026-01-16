@@ -86,8 +86,9 @@ body {
     
     margin: 25px auto; /* centers the container horizontally */
     max-width: 75vw; /* maximum width of the container */
-    padding: 24px; /* inner spacing */
+    padding: 1.5vw; /* inner spacing */
     max-height: fit-content;
+    height: min-content;
 
     display:flex;
     flex-flow:column;
@@ -373,6 +374,10 @@ img {
     flex-flow: column;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .button {
     font-family: "PPNeueMontrealMono-Bold", monospace;
     font-weight: 700;
@@ -410,6 +415,7 @@ img {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    height: fit-content;
 }
 
 .socials .button {
