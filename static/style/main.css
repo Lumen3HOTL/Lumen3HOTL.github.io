@@ -519,6 +519,8 @@ div.scroll-container {
     white-space: nowrap;
     padding: 10px;
     width: 100%;
+    flex:auto;
+    flex-direction:row;
 }
   
 div.scroll-container img {
